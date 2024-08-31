@@ -1,1 +1,1 @@
-# SEC-355: Ethical Hacking &amp; Penetration Testing
+# SEC-335: Ethical Hacking &amp; Penetration Testing
