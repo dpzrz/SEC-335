@@ -7,10 +7,12 @@
 Attack Mehodology, Reconnaissance, Scanning, Explotation, Post-Explotation
 
 
+### Activity 1.2
+
+Using Google remote desktop were able to access our kali linux machine from our native browsers.
+
 ### Assignment 1.2
 
 Using multiple passive recon tools we tried to gather as much infomration on our target as possible. Using Netcraft were able to get a btter understaing of their webistes secuirty an technology used throught the site.
 
-Using another tool based in kali linux called theHarvester were able to identofy networks and hosts. These outputs can help us get a better understanding of the
-
-### Assignment 1.3
+Using another tool based in kali linux called theHarvester were able to identify networks and hosts. These outputs can help us get a better understanding of the connections the target has.
