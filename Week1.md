@@ -9,7 +9,7 @@ Attack Mehodology, Reconnaissance, Scanning, Explotation, Post-Explotation
 
 ### Activity 1.2
 
-Using Google remote desktop were able to access our kali linux machine from our native browsers.
+Using Google remote desktop were able to access our kali linux machine from our native browsers. The process was completed using the chrome extension installed on both our Kali linux workstations and our native browser.
 
 ### Assignment 1.2
 
