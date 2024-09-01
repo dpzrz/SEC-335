@@ -1,4 +1,4 @@
-# Week 1
+# Passive Recon + Kali Remote Computer
 
 ### Assignment 1.1
 
