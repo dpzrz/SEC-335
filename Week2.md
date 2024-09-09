@@ -16,6 +16,9 @@ Nmap (“Network Mapper”) is an open source tool for network exploration and s
 
 Our next bash script will runn the `nmap -n -vv -sn` command against a range of IPs. These outputs will be redirected to another text file that has been created for this scripts results.
 
+### Reflections
+The bash script could have been made with more coustimization and usability. These commands couldve been one-liners but I wanted to try and start creating the scripts when an where I could.
+
 
 
 ## Lab 2.1 Port Scanner
