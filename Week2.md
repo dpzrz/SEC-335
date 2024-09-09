@@ -18,4 +18,5 @@ Our next bash script will runn the `nmap -n -vv -sn` command against a range of 
 
 
 
+## Lab 2.1 Port Scanner
 
