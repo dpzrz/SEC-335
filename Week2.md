@@ -33,5 +33,13 @@ In this lab were using `nmap` to scan through open ports against or Windows box.
 
 The command struture is `xfreerdp /u:USERNAME /p:PASSWORD /v:IP_ADDRESS` Using this command structure you're able to connect and veiw the desktop remotely
 
+Our `nmap` commands are now given more in-depth uses. The flags used in this lab were `-sV` `-A`.
+
+-sV allowed us to find the services running on the ports of our choosing
+
+-A allowed us to derive more information like the targets OS data and MAC address
+
+Running these nmap flags against the ports of the Windows box showed us alot of infromation and these falgs prove valuble in the process of Active Recon.
+
 
 
