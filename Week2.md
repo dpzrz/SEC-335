@@ -23,3 +23,9 @@ The bash script could have been made with more coustimization and usability. The
 
 ## Lab 2.1 Port Scanner
 
+Were creating a bash script to sweep through a list of hosts and a list of adresses. We need to create these pieces that will be used in our script. We create two files that will house our data `mytargets.txt` and `mytcpports.txt`
+
+The script that is created has to access both tthese files and use the list of adresses and ports and perform a port scan against them. We can do this by utilizing variables and a `for loop` within our bash script. The script can be found [here]()
+
+
+
