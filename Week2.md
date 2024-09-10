@@ -27,5 +27,11 @@ Were creating a bash script to sweep through a list of hosts and a list of adres
 
 The script that is created has to access both tthese files and use the list of adresses and ports and perform a port scan against them. We can do this by utilizing variables and a `for loop` within our bash script. The script can be found [here](https://github.com/dpzrz/SEC-335/blob/main/Scripts/portscanner.sh)
 
+## Lab 2.2 Port Scanner 2
+
+In this lab were using `nmap` to scan through open ports against or Windows box. Along with this were also establishing a RDP connection between our Kali Linux box and Windows. We acheive this by first making sure `xfreerdp` is isntalled on our Kali Linux. The commands used for `xfreerdp` were researched. REMOTE DESKTOP NEEDS TO BE TURNED ON in Windows Settings.
+
+The command struture is `xfreerdp /u:USERNAME /p:PASSWORD /v:IP_ADDRESS` Using this command structure you're able to connect and veiw the desktop remotely
+
 
 
