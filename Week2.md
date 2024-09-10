@@ -41,5 +41,6 @@ Our `nmap` commands are now given more in-depth uses. The flags used in this lab
 
 Running these nmap flags against the ports of the Windows box showed us alot of infromation and these falgs prove valuble in the process of Active Recon.
 
+During This lab there was alot of reasearching that had to be done in regards to xfreerdp. It wouldnt work after the initaial test and I had to research the issue and torubleshoot. Figuring out the issue invlolved a reinstallation and password change on the Windows box. 
 
 
