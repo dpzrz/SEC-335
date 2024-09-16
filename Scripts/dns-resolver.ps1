@@ -1,3 +1,4 @@
+#Week3 Script
 param (
     [string]$NetworkPrefix,  # The network prefix, e.g., "192.168.3"
     [string]$DNSServer       # The DNS server, e.g., "192.168.4.4"
