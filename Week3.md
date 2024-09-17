@@ -17,7 +17,7 @@ for i in {1..254}; do
 done
 ```
 
-
+Thisis the main portion of the script, were looping through the given range from 1-254. The variable `$network_prefix` holds our `10.0.5` value.
 
 ## Assignmnet 3.1 Powershell and DNS
 
