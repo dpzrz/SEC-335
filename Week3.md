@@ -43,11 +43,8 @@ We use nmap one liners to run scans that can proudce an ouptut showing if a port
 
 ### Reflection
 
+Writing more scripts for this assignment proved challenging. The one-liners are what I found most difficult. The bash scripting process such as variables and functions are very similar to other coding languages, so the creation of those scripts wasn't too difficult.
 
-
-## Assignmnet 3.1 Powershell and DNS
-
-## Assignment 3.2 DNS uses TCP and UDP
 
 
 ## More Information
