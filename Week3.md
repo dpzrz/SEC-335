@@ -16,8 +16,34 @@ for i in {1..254}; do
     timeout 1 bash -c "echo >/dev/tcp/$host/$port" 2>/dev/null && echo "$host,$port"
 done
 ```
-
 Thisis the main portion of the script, were looping through the given range from 1-254. The variable `$network_prefix` holds our `10.0.5` value.
+
+Our second script is made to accept a network prefix and a specified DNS server and perform a lookup.
+
+```
+# Header for output
+echo "IP,Hostname"
+
+# Loop through IP addresses from .1 to .254
+for i in {1..254}; do
+    ip="$network_prefix.$i"
+
+```
+This portion of our dns_resolver script is similar to our prevoius one. Its a loop through our netowrk prefix. 
+
+```
+hostname=$(nslookup $ip $dns_server | grep 'name = ' | awk '{print $4}' | sed 's/\.$//')
+```
+
+This line in the script is the command that runs agaisnt our for loop of IP Addresses. It performs `nslookup` and `grep` the names of the lookup. Our awk statement takes the output of grep and prints out the 4th column. Our `sed` command is used to remove the trailing `.` from the output.
+
+We use nmap one liners to run scans that can proudce an ouptut showing if a port is open and the service tied with that port.
+
+
+
+### Reflection
+
+
 
 ## Assignmnet 3.1 Powershell and DNS
 
