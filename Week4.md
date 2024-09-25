@@ -30,4 +30,5 @@ After this one liner were given alot of infomrmation from our target host:
 |10.0.5.23|	 | 80	|tcp	|http	|Apache httpd 2.2.15 ((CentOS))|
 
 Running: Linux 2.6.X|3.X
-CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+
+CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3 
