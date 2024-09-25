@@ -32,3 +32,10 @@ After this one liner were given alot of infomrmation from our target host:
 Running: Linux 2.6.X|3.X
 
 CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3 
+
+### NmapToCSV Walkthrough
+
+
+
+`nmaptocsv -i nmapoutput.txt -d ","  `
+
