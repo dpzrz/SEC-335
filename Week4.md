@@ -35,7 +35,9 @@ CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
 
 ### NmapToCSV Walkthrough
 
-
+After taking our newwst `nmap` scanand outputting it into a text document using `>>` we are tasked to use nmaptocsv to format the data into a google sheets/csv fotmat.
 
 `nmaptocsv -i nmapoutput.txt -d ","  `
+
+This takes out output from the txt document anad prints an output that can be pasted into google sheets.
 
