@@ -2,12 +2,12 @@
 | User                   | Password | Service |
 |------------------------|----------|----------|
 | samwise                | Data 1   | Data 2   |
-| samwise.gamgee   | Data 3   | Data 4   |
-| bilbo    | Data 5   | Data 6   |
-| bilbo.baggins    | Data 5   | Data 6   |
-| pippin    | Data 5   | Data 6   |
-| pippin.took    | Data 5   | Data 6   |
-| frodo    | Data 5   | Data 6   |
-| frodo.baggins   | Data 5   | Data 6   |
-|     | Data 5   | Data 6   |
+| samwise.gamgee   | Mallorn79   | ssh   |
+| bilbo    | Rivendell107   | httpd  |
+| bilbo.baggins    | Frodo2013   | ssh   |
+| pippin    | adminPippin   | httpd   |
+| pippin.took    |    |   |
+| frodo    |    |    |
+| frodo.baggins   | Strider2020  |  ssh   |
+| peregrin.took   | 28Peregrin| ssh   |
 
