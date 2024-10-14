@@ -1,5 +1,5 @@
 
-| User     | Password | Service |
+| User                   | Password | Service |
 |------------------------|----------|----------|
 | samwise    | Data 1   | Data 2   |
 | samwise.gamgee   | Data 3   | Data 4   |
