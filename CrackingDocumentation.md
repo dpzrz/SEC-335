@@ -6,3 +6,5 @@
 ## dirB
 
 ## JTR (JackTheRipper)
+
+## Hashcat
