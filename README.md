@@ -11,3 +11,5 @@ Diegos Tech Journal for SEC-335
 [Week 04](https://github.com/dpzrz/SEC-335/blob/main/Week4.md) Manual Vulnrability Detection
 
 [Week 05](https://github.com/dpzrz/SEC-335/blob/main/Week5.md) Password Guessing
+
+[Week 05 Cracked Hashes]()
