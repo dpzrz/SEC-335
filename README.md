@@ -12,4 +12,4 @@ Diegos Tech Journal for SEC-335
 
 [Week 05](https://github.com/dpzrz/SEC-335/blob/main/Week5.md) Password Guessing
 
-[Week 05 Cracked Hashes]()
+[Week 05 Cracked Hashes](https://github.com/dpzrz/SEC-335/blob/main/Week5cracks.md)
