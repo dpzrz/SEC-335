@@ -65,3 +65,15 @@ To locate a word writable file the one liner has to be modified.
 * `-perm -002`: Matches files where the others write bit is set
 * `2>/dev/null:` Redirects permission errors to /dev/null
 
+Tracking down a word writable file in Rocky is made challenging becasue theres two dorectories that we've been warned will give false positives, the `/sys` and `/proc` direcotries. So the one-liner will need to account for this.
+
+`find /etc -path /sys -prune -o -path /proc -prune -o -type f -perm -002 -name 's*' 2>/dev/null`
+
+* `-find /etc`: Searches through the etc directory
+* `-path /sys -prune`: Excludes the /sys directory from the search.
+* `-path /proc -prune`: Excludes the /proc directory from the search.
+* `-o`: Logical OR operator.
+* `-type f`: Restricts the search to regular files.
+* `-perm -002`: Matches files that are world-writable .
+* `-name 's*'`: Filters files whose names start with the letter s.
+* `2>/dev/null`: Redirects permission errors to /dev/null.
